@@ -1,0 +1,32 @@
+{
+    "name": "wuxuejian/dcat-qiniu-upload",
+    "alias": "",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/wuxuejian/dcat-qiniu-upload",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "your name",
+            "email": "your email"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wuxuejian\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Wuxuejian\\DcatQiniuUploadServiceProvider",
+        "laravel": {
+            "providers": [
+                "Wuxuejian\\DcatQiniuUploadServiceProvider"
+            ]
+        }
+    }
+}
