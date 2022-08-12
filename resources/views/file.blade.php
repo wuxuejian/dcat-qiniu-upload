@@ -63,6 +63,7 @@
         options = {!! $options !!},
     events = options.events;
 console.log('{!! $selector !!}')
+    console.log(options)
     init();
 
     function init() {

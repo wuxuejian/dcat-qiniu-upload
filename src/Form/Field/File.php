@@ -14,7 +14,6 @@ class File extends BaseFile
     {
         parent::__construct($column, $arguments);
 
-        Admin::requireAssets('@wuxuejian.dcat-qiniu-upload');
 
     }
     public function qiniu(string $disk)
@@ -111,6 +110,17 @@ class File extends BaseFile
             }
         JS);
         return $this;
+    }
+    /**
+     * @return string
+     */
+    public function render()
+    {
+        Admin::requireAssets('@wuxuejian.dcat-qiniu-upload');
+
+        //$this->setupScript();
+
+        return parent::render();
     }
 
 }

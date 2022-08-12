@@ -52,7 +52,7 @@
                     thumbHeight: 160,
                     disabled: !1,
                     autoUpdateColumn: !1,
-                    disableRemove: !1,
+                    disableRemove: 1,
                     dimensions: {},
                     lang: {
                         exceed_size: "文件大小超出",
